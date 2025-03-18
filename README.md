@@ -1,6 +1,6 @@
 # Old Gold Game
 
-by YOUR NAME HERE
+by Zach Latham
 
 ---
 
