@@ -1,4 +1,4 @@
-# Old Gold Game
+# Greedy Pig Game
 
 by Zach Latham
 
@@ -23,8 +23,7 @@ The project is written in the [Kotlin](https://kotlinlang.org) programming langu
 ---
 
 ## Project Description
-
-Old gold is a two-player game, played on a one-dimensional grid with coins, where the aim is to win by being the player who removes the gold coin. 
+Greedy Pig is a two-player game, played with a Die but on a computer. It will randomly generate a number from 1 to 6 and you have to keep score on your grid. If it lands on a 1 you lose all your points from that round. You can chose to sit out if you think you have enough from that round. Whoever has the most at the end of each round wins.
 
 
 
