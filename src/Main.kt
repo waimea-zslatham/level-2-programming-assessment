@@ -14,6 +14,24 @@
 
 
 fun main() {
+    val dice = mutableListOf<String>()
+    dice.add("1")
+    dice.add("2")
+    dice.add("3")
+    dice.add("4")
+    dice.add("5")
+    dice.add("6")
+
+    while (true) {
+        // Get user action
+        val action = menu()
+        // Act upon it
+        when (action) {
+            'Q' -> roll
+            'A' -> stop
+        }
+
+
     println(
         " ________  ________  _______   _______   ________      ___    ___ \n" +
                 "|\\   ____\\|\\   __  \\|\\  ___ \\ |\\  ___ \\ |\\   ___ \\    |\\  \\  /  /|\n" +
@@ -40,24 +58,49 @@ fun main() {
     println("Whoever has the most at the end of each round wins.")
     println()
 
-    val playerName = ("Welcome player 1. Please enter your name: ")
-    print("Nice to meet you, $playerName")
+    // Random number generator
+    val diceRoll = (1..12).random()
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // create the scores and target score
+        var player1Score = 0
+        var player2Score = 0
+        val targetScore = 100
+
+        // Game loop
+        while (player1Score < targetScore && player2Score < targetScore) {
+            // Player 1's turn
+            println("Player 1's turn")
+            player1Score <= targetScore
+            println("Player 1 score: $player1Score")
+            println("Player 2's turn")
+
+            if (player1Score >= targetScore) {
+                println("Player 1 wins!")
+                break
+            }
+
+            // Player 2's turn
+            println("Player 2's turn")
+            if (player2Score <= targetScore) {
+                println("Player 2 score: $player2Score")
+
+
+                if (player2Score >= targetScore) {
+                    println("Player 2 wins!")
+                    break
+                }
+            }
+        }
     }
-
-// Random number generator
-        val diceRoll = (1..100).random()
-// Creating a mutable list of dice numbers
-        val dice = mutableListOf<String>()
-
-// My dice list
-        dice.add("1")
-        dice.add("2")
-        dice.add("3")
-        dice.add("4")
-        dice.add("5")
-        dice.add("6")
-
-        dice.shuffle()
-    }
-
-
