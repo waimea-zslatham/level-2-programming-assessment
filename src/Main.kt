@@ -15,92 +15,111 @@
 
 fun main() {
     val dice = mutableListOf<String>()
+
     dice.add("1")
     dice.add("2")
     dice.add("3")
     dice.add("4")
     dice.add("5")
     dice.add("6")
-
-    while (true) {
-        // Get user action
-        val action = menu()
-        // Act upon it
-        when (action) {
-            'Q' -> roll
-            'A' -> stop
-        }
-
+    dice.add("7")
+    dice.add("8")
+    dice.add("9")
+    dice.add("10")
+    dice.add("11")
+    dice.add("12")
 
     println(
-        " ________  ________  _______   _______   ________      ___    ___ \n" +
-                "|\\   ____\\|\\   __  \\|\\  ___ \\ |\\  ___ \\ |\\   ___ \\    |\\  \\  /  /|\n" +
-                "\\ \\  \\___|\\ \\  \\|\\  \\ \\   __/|\\ \\   __/|\\ \\  \\_|\\ \\   \\ \\  \\/  / /\n" +
-                " \\ \\  \\  __\\ \\   _  _\\ \\  \\_|/_\\ \\  \\_|/_\\ \\  \\ \\\\ \\   \\ \\    / / \n" +
-                "  \\ \\  \\|\\  \\ \\  \\\\  \\\\ \\  \\_|\\ \\ \\  \\_|\\ \\ \\  \\_\\\\ \\   \\/  /  /  \n" +
-                "   \\ \\_______\\ \\__\\\\ _\\\\ \\_______\\ \\_______\\ \\_______\\__/  / /    \n" +
-                "    \\|_______|\\|__|\\|__|\\|_______|\\|_______|\\|_______|\\___/ /     \n" +
-                " ________  ___  ________                             \\|___|/      \n" +
-                "|\\   __  \\|\\  \\|\\   ____\\                                         \n" +
-                "\\ \\  \\|\\  \\ \\  \\ \\  \\___|                                         \n" +
-                " \\ \\   ____\\ \\  \\ \\  \\  ___                                       \n" +
-                "  \\ \\  \\___|\\ \\  \\ \\  \\|\\  \\                                      \n" +
-                "   \\ \\__\\    \\ \\__\\ \\_______\\                                     \n" +
-                "    \\|__|     \\|__|\\|_______|                                     "
+        "  _______ _            _____  _             _____                      \n" +
+                "|__   __| |          |  __ \\(_)           / ____|                     \n" +
+                "   | |  | |__   ___  | |  | |_  ___ ___  | |  __  __ _ _ __ ___   ___ \n" +
+                "   | |  | '_ \\ / _ \\ | |  | | |/ __/ _ \\ | | |_ |/ _` | '_ ` _ \\ / _ \\\n" +
+                "   | |  | | | |  __/ | |__| | | (_|  __/ | |__| | (_| | | | | | |  __/\n" +
+                "   |_|  |_| |_|\\___| |_____/|_|\\___\\___|  \\_____|\\__,_|_| |_| |_|\\___|                                     "
     )
 
     println("-----------------------------------------------------------------------------------------------------")
     println("                                 HOW TO PLAY")
-    println("Greedy Pig is a two-player game, played with a Die but on a computer.")
-    println("It will randomly generate a number from 1 to 6 and you have to keep score on your grid.")
-    println("If it lands on a 1 you lose all your points from that round.")
+    println("The Dice Game is a two-player game, played with a Die but on a computer.")
+    println("It will randomly generate a number from 1 to 12 and you have to keep score on a grid.")
+    println("If it lands on a 1 you lose all your points in total.")
     println("You can chose to sit out if you think you have enough from that round.")
     println("Whoever has the most at the end of each round wins.")
     println()
 
-    // Random number generator
-    val diceRoll = (1..12).random()
+    fun menu(): Char {
+        println("[A] PLAY")
+        println("===============")
+        println("[B] TUTORIAL ON HOW TO PLAY")
+        println("================================")
+        println("[C] QUIT")
+        println("=============")
+//        println("[D] Single player with AI")
+//        println("===============")
 
+        val validChoice = "ABCD"
 
+        while (true) {
+            print("Choice: ")
+            val input = readln()
+            // Typed nothing? Try again!
+            if (input.isBlank()) continue
+            // Grab the first letter
+            val choice = input.uppercase().first()
+            // Check it is a valid option
+            if (validChoice.contains(choice)) return choice
+        }
+    }
 
+    // The function that starts the game from the A choice
+    fun startGame() {
 
+    }
 
+    //The function that gives the player information on how to play (tutorial)
+    fun tutorial() {
 
+    }
 
+    // The function that ends the game for the user. (Breaks loop)
+    fun endGame() {
+        println("==================================================")
+        println("Are you sure you would like to leave the game?")
+        println("==================================================")
+        println("[Y] YES")
+        println("[N] NO")
+        val validChoice = "YN"
+        while (true) {
+            print("Choice: ")
+        }
 
-
-
-
-
-
-        // create the scores and target score
-        var player1Score = 0
-        var player2Score = 0
-        val targetScore = 100
-
-        // Game loop
-        while (player1Score < targetScore && player2Score < targetScore) {
-            // Player 1's turn
-            println("Player 1's turn")
-            player1Score <= targetScore
-            println("Player 1 score: $player1Score")
-            println("Player 2's turn")
-
-            if (player1Score >= targetScore) {
-                println("Player 1 wins!")
-                break
-            }
-
-            // Player 2's turn
-            println("Player 2's turn")
-            if (player2Score <= targetScore) {
-                println("Player 2 score: $player2Score")
-
-
-                if (player2Score >= targetScore) {
-                    println("Player 2 wins!")
+        val input = readln() {
+            // Typed nothing? Try again!
+            if (input.isBlank()) continue
+            // Grab the first letter
+            val choice = input.uppercase().first()
+            // Check it is a valid option
+            if (validChoice.contains(finalChoice)) return finalChoice
+            val lastOption = finalChoice
+            when (lastOption) {
+                'Y' -> {
                     break
                 }
+
+                'N' ->
             }
         }
     }
+
+
+    // Random number generator
+    val diceRoll = (1..12).random()
+}
+
+
+
+    var player1Score = 0
+    var player2Score = 0
+    var targetScore = 0
+
+
