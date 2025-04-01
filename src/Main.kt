@@ -93,28 +93,28 @@ fun main() {
             print("Choice: ")
         }
 
-        val input = readln() {
-            // Typed nothing? Try again!
-            if (input.isBlank()) continue
-            // Grab the first letter
-            val choice = input.uppercase().first()
-            // Check it is a valid option
-            if (validChoice.contains(finalChoice)) return finalChoice
-            val lastOption = finalChoice
-            when (lastOption) {
-                'Y' -> {
-                    break
-                }
-
-                'N' ->
-            }
+//        val input = readln() {
+//            // Typed nothing? Try again!
+//            if (input.isBlank()) continue
+//            // Grab the first letter
+//            val choice = input.uppercase().first()
+//            // Check it is a valid option
+//            if (validChoice.contains(finalChoice)) return finalChoice
+//            val lastOption = finalChoice
+//            when (lastOption) {
+//                'Y' -> {
+//                    break
+//                }
+//
+//                'N' ->
+//            }
         }
     }
 
 
     // Random number generator
     val diceRoll = (1..12).random()
-}
+                                                //w
 
 
 
