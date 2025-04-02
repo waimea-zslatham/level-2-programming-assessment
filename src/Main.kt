@@ -14,20 +14,22 @@
 
 
 fun main() {
-    val dice = mutableListOf<String>()
 
-    dice.add("1")
-    dice.add("2")
-    dice.add("3")
-    dice.add("4")
-    dice.add("5")
-    dice.add("6")
-    dice.add("7")
-    dice.add("8")
-    dice.add("9")
-    dice.add("10")
-    dice.add("11")
-    dice.add("12")
+//    dice.add("1")
+//    dice.add("2")
+//    dice.add("3")
+//    dice.add("4")
+//    dice.add("5")
+//    dice.add("6")
+//    dice.add("7")
+//    dice.add("8")
+//    dice.add("9")
+//    dice.add("10")
+//    dice.add("11")
+//    dice.add("12")
+
+
+
 
     println(
         "  _______ _            _____  _             _____                      \n" +
@@ -47,6 +49,9 @@ fun main() {
     println("Whoever has the most at the end of each round wins.")
     println()
 
+    val randomNumber = (1..12).random()
+    println(randomNumber)
+
     fun menu(): Char {
         println("[A] PLAY")
         println("===============")
@@ -54,8 +59,6 @@ fun main() {
         println("================================")
         println("[C] QUIT")
         println("=============")
-//        println("[D] Single player with AI")
-//        println("===============")
 
         val validChoice = "ABCD"
 
@@ -68,30 +71,35 @@ fun main() {
             val choice = input.uppercase().first()
             // Check it is a valid option
             if (validChoice.contains(choice)) return choice
+            when (choice) {
+                'A' -> startGame
+                'B' -> tutorial
+//            'D' -> deletePet()
+            }
         }
-    }
 
-    // The function that starts the game from the A choice
-    fun startGame() {
+        // The function that starts the game from the A choice
+        fun startGame() {
 
-    }
 
-    //The function that gives the player information on how to play (tutorial)
-    fun tutorial() {
-
-    }
-
-    // The function that ends the game for the user. (Breaks loop)
-    fun endGame() {
-        println("==================================================")
-        println("Are you sure you would like to leave the game?")
-        println("==================================================")
-        println("[Y] YES")
-        println("[N] NO")
-        val validChoice = "YN"
-        while (true) {
-            print("Choice: ")
         }
+
+        //The function that gives the player information on how to play (tutorial)
+        fun tutorial() {
+
+        }
+
+        // The function that ends the game for the user. (Breaks loop)
+        fun endGame() {
+            println("==================================================")
+            println("Are you sure you would like to leave the game?")
+            println("==================================================")
+            println("[Y] YES")
+            println("[N] NO")
+            val validChoice = "YN"
+            while (true) {
+                print("Choice: ")
+            }
 
 //        val input = readln() {
 //            // Typed nothing? Try again!
@@ -112,14 +120,11 @@ fun main() {
     }
 
 
-    // Random number generator
-    val diceRoll = (1..12).random()
-                                                //w
 
 
 
-    var player1Score = 0
-    var player2Score = 0
-    var targetScore = 0
+//    var player1Score = 0
+//    var player2Score = 0
+//    var targetScore = 0
 
 
