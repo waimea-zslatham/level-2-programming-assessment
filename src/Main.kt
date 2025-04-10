@@ -1,3 +1,5 @@
+import kotlin.random.Random
+
 /**
  * =====================================================================
  * Programming Project for NCEA Level 2, Standard 91896
@@ -15,28 +17,25 @@
 
 fun main() {
     val action = menu()
-    when (action) {
-        'a' -> startGame()
-        'b' -> tutorial()
-        'c' -> endGame()
     }
-}
-//    dice.add("1")
-//    dice.add("2")
-//    dice.add("3")
-//    dice.add("4")
-//    dice.add("5")
-//    dice.add("6")
-//    dice.add("7")
-//    dice.add("8")
-//    dice.add("9")
-//    dice.add("10")
-//    dice.add("11")
-//    dice.add("12")
 
+//val dice = mutableListOf<String>()
 
+//dice.add(1)
+//dice.add(2)
+//dice.add(3)
+//dice.add(4)
+//dice.add(5)
+//dice.add(6)
+//dice.add(7)
+//dice.add(8)
+//dice.add(9)
+//dice.add(10)
+//dice.add(11)
+//dice.add(12)
 
-fun title() {
+// This is the title of the game with a brief description of what the game is about.
+fun start() {
     println(
         "  _______ _            _____  _             _____                      \n" +
                 "|__   __| |          |  __ \\(_)           / ____|                     \n" +
@@ -45,7 +44,7 @@ fun title() {
                 "   | |  | | | |  __/ | |__| | | (_|  __/ | |__| | (_| | | | | | |  __/\n" +
                 "   |_|  |_| |_|\\___| |_____/|_|\\___\\___|  \\_____|\\__,_|_| |_| |_|\\___|                                     "
     )
-
+// This is the brief description.
     println("-----------------------------------------------------------------------------------------------------")
     println("                                 HOW TO PLAY")
     println("The Dice Game is a two-player game, played with a Die but on a computer.")
@@ -55,87 +54,92 @@ fun title() {
     println("Whoever has the most at the end of each round wins.")
     println()
 }
-    fun menu() : Char {
-        println("[a] PLAY")
+    fun menu() {
+        println("[A] PLAY")
         println("===============")
-        println("[b] TUTORIAL ON HOW TO PLAY")
-        println("================================")
-        println("[c] QUIT")
+        println("[B] QUIT")
         println("=============")
 
-        val validChoice = "abc"
+        val choice = readLine()?.uppercase()
 
-        while (true) {
-            print("Choice: ")
+        when (choice) {
+            // The function that starts the game
+            "A" -> {
+                println("Starting the game now!!!")
+                startGame()
+            }
+            // The function that ends the game for the user. (Breaks loop)
+            "B" -> {
+                println("Thanks for playing!!")
+                return
+            }
 
-            val input = readln()
-            // Typed nothing? Try again!
-            if (input.isBlank()) continue
-            // Grab the first letter
-            val choice = input.lowercase().first()
-            // Check it is a valid option
-            if (validChoice.contains(choice)) return choice
+            else -> {
+                println("That's not A or B... try again next time")
+            }
         }
     }
 
-        // The function that starts the game from the A choice
-            fun startGame(): Char {
-            val player1 = getString("Please enter your name Player 1: ")
-            val player2 = getString("Please enter your name Player 2: ")
-            println("Welcome to The Dice Game $player1 and $player2")
+    // The function that starts the game from the A choice
+        fun startGame() {
+        val player1 = getString("Please enter your name Player 1: ")
+        println("Welcome $player1")
+        val player2 = getString("Please enter your name Player 2: ")
+        println("Welcome to The Dice Game $player1 and $player2")
 
-            val randomNumber = (1..12).random()
-            println(randomNumber)
+        println("$player1, TIME TO ROLL THE DICE. You get 6 turns each. Once you have had your 6 turns please enter 'No' and give $player2 a turn")
+        var points = 0
+        var playAgain = "yes"
 
-        //The function that gives the player information on how to play (tutorial)
-        fun tutorial() {
+        while (playAgain == "yes") {
+            println("$player1 Press Enter to roll the dice!!!")
+            readLine()
 
+            val roll = (1..12).random()
+            println("$player1 You rolled a $roll")
+            points += roll
+            println("$player1, These are your points so far: $points")
+
+            println("Wanna roll again? (yes/no)")
+            playAgain = readLine()?.lowercase() ?: "no"
         }
+        println ("Game over!!! You ended with $points points")
 
-        // The function that ends the game for the user. (Breaks loop)
-        fun endGame() : Char {
-            println("==================================================")
-            println("Thanks for playing the Dice Game")
-            println("==================================================")
-            return 'a'
+
+
+            println("$player2, TIME TO ROLL THE DICE. Once you've had 6 turns please enter 'No' and end game.")
+                var points2 = 0
+
+                var playAgain2 = "yes"
+
+            while (playAgain2 == "yes") {
+                println("$player2 Press Enter to roll the dice!!!")
+                readLine()
+
+                val roll = (1..12).random()
+                println("$player2 You rolled a $roll")
+                points2 += roll
+                println("$player2, These are your points so far: $points2")
+
+                println("Wanna roll again? (yes/no)")
+                playAgain2 = readLine()?.lowercase() ?: "no"
             }
-
-//        val input = readln() {
-//            // Typed nothing? Try again!
-//            if (input.isBlank()) continue
-//            // Grab the first letter
-//            val choice = input.uppercase().first()
-//            // Check it is a valid option
-//            if (validChoice.contains(finalChoice)) return finalChoice
-//            val lastOption = finalChoice
-//            when (lastOption) {
-//                'Y' -> {
-//                    break
-//                }
-//
-//                'N' ->
-//            }
+                    println ("Game over!!! You ended with $points2 points")
         }
 
-fun getString (prompt: String) : String {
+
+
+fun getString (s: String) : String {
     var userInput: String
 
     while(true) {
-        print(prompt)
+        print(s)
 
         userInput = readln()
-        if (userInput.isBlank()) break
+        if (userInput.isNotBlank()) break
     }
 
     return userInput
 }
-
-
-
-
-
-//    var player1Score = 0
-//    var player2Score = 0
-//    var targetScore = 0
 
 
