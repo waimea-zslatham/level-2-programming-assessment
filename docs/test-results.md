@@ -4,20 +4,77 @@ The test results show the actual outcome of the testing, following the [Test Pla
 
 ---
 
-## Test the game structure works with the key components of random number (dice) and scoring
+## First off display the logo and the how to play instructions
 
-I want to have my game display the random number generator to give the user its points. I want it to be put in a total
-score in order to display at the end of the game how many they have. I want then the 2nd player to have a go then display a winner.
+I have made my game displaying the logo using www.asciiart.eu to help create it. I also added the how to play instructions as soon as you run the game. Later on I will have the (A) Start function and (B) End
+function to replace them before they display after a choice is made
 
 ### Test Data To Use
 
-I will run the game multiple times and every time change something to add features to the game to make it better.
+I will run it and the logo should appear with the how to play
 
 ### Test Result
 
-![Animation 1.gif](screenshots/Animation%201.gif)
+![img.png](img.png)
 
-Comment on test result. Comment on test result. Comment on test result. Comment on test result. Comment on test result. Comment on test result.
+The logo displays well and the instructions are clear.
+
+---
+
+## Test the Player 1 and Player 2 work
+
+I have made the game ask Player 1 to input their name so they can be identified when asked to do specific things. The same thing will occur for player 2 as well.
+
+### Test Data To Use
+
+Once run and player 1 and 2 have inputed their names it will display their names by welcoming them then telling them how to play and what to do.
+
+### Test Result 1 - Player 1 can be inputed and works
+![img_1.png](img_1.png) 
+
+### Test Result 2 - Player 1 is welcomed to the game and then player 2 is asked for name
+![img_2.png](img_2.png) 
+
+### Test Result 3 - It introduces both player 1 and 2 to the game and explains what to do to start the game
+![img_3.png](img_3.png)
+
+### Test Result 4 - it won't let any players not input a name and will go on infinitely unless a character is inputed
+![img_4.png](img_4.png)
+
+---
+
+## Test the game structure works with the key components of random number (dice) and scoring
+
+I have made my game display the roll they are on, the number the dice has rolled and how many points they have. The game then asks if they want to roll again. 
+For now when they put no the game breaks. But once the round is up it will display how many points they have.
+
+### Test Data To Use
+
+I will run it and a dice roll random number, total points and what roll your on will be produced 
+
+### Test Result
+![img_9.png](img_9.png)
+
+### Test Result - points so far
+![img_10.png](img_10.png)
+
+### Test Result - Roll ......
+![img_11.png](img_11.png)
+
+### Test Result Player 1
+![img_5.png](img_5.png)
+
+### Test Result Player 1 (2)
+![img_6.png](img_6.png)
+
+### Test Result Player 2
+![img_7.png](img_7.png)
+
+### Test Result Player 2 (2)
+![img_8.png](img_8.png)
+
+I got the game to allow both player 1 and 2 to both game 6 rounds each after player 1 had finished. The game works with both the dice and the rolls counted. The total score
+also works too and it displays them at the end.
 
 ---
 

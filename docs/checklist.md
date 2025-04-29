@@ -16,7 +16,7 @@ The game functions correctly and meets the specification:
 - [X] Players **take turns** to play
 - [X] Players provides **input data** to the game (e.g. moves to make)
 - [X] The **current status** of the game is shown after each play
-- [ ] A **winner is detected** correctly
+- [X] A **winner is detected** correctly
 
 ### Program Code
 
@@ -41,15 +41,15 @@ The program code:
 ### Program Testing
 
 The program has been tested and there is documented evidence that:
-- [ ] The game is **fully functional**, showing testing of:
-  - [ ] game setup
-  - [ ] player moves
-  - [ ] players taking turns
-  - [ ] scoring (if any)
-  - [ ] players winning
-  - [ ] final feedback (if appropriate)
-- [ ] **Valid (expected) data** has been used to test **all data inputs**
-- [ ] Where tests have failed, **fixes** are discussed and **tests re-run**
+- [ X The game is **fully functional**, showing testing of:
+  - [X] game setup
+  - [X] player moves
+  - [X] players taking turns
+  - [X] scoring (if any)
+  - [X] players winning
+  - [X] final feedback (if appropriate)
+- [X] **Valid (expected) data** has been used to test **all data inputs**
+- [X] Where tests have failed, **fixes** are discussed and **tests re-run**
 
 ---
 

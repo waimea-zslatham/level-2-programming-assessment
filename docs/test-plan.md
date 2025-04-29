@@ -42,31 +42,31 @@ The scores will be gone from round 1 if the number comes up. If the number 1 com
 
 ## Sit down, stay standing
 
-I want user to have a choice that once they have received a good score that they like they can chose to sit down
-or keep standing.
-lp
+I want user to have a choice that once they have received a good score that they like they can choose to stop
+or keep going.
+
 ### Test Data To Use
 
-I will run code that has a letter you click to sit down and stop receiving points
+I will run code that has a word you type to stop receiving points
 
 ### Expected Test Result
  
-The scores will be gone from round 1 if the number specific comes up. If they sit down they keep their points but if
+The scores will be gone from the rolls leading up to it. If they stop because they are happy with their points they keep their points but if
 the number comes up they lose their points from the entire game.
 
 ---
 
-## 1
+## Winner
 
-I want the generator to generate a number that when received will make the user lose all their points.
+I want the game at the end to display who the winner is and how many points they got to win
 
 ### Test Data To Use
 
-I will run code that when the certain number is generated it erases all points built up from the first round.
+I will run code that when the game is finished the winner has there name displayed with their points and the game will end.
 
 ### Expected Test Result
+The name and winner to come up with the final score
 
-The scores will be gone from round 1 if the number comes up. If the number 1 comes up first round well they have none to lose
 
 ---
 

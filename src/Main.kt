@@ -15,21 +15,6 @@ import kotlin.random.Random
 
 
 
-//val dice = mutableListOf<String>()
-
-//dice.add(1)
-//dice.add(2)
-//dice.add(3)
-//dice.add(4)
-//dice.add(5)
-//dice.add(6)
-//dice.add(7)
-//dice.add(8)
-//dice.add(9)
-//dice.add(10)
-//dice.add(11)
-//dice.add(12)
-
 // This is the title of the game with a brief description of what the game is about.
 fun main() {
     val action = menu()
@@ -63,6 +48,21 @@ fun main() {
 
     // The function that starts the game from the A choice
         fun startGame() {
+        val dice = mutableListOf<Int>()
+
+        dice.add(1)
+        dice.add(2)
+        dice.add(3)
+        dice.add(4)
+        dice.add(5)
+        dice.add(6)
+        dice.add(7)
+        dice.add(8)
+        dice.add(9)
+        dice.add(10)
+        dice.add(11)
+        dice.add(12)
+
         println(
             "  _______ _            _____  _             _____                      \n" +
                     "|__   __| |          |  __ \\(_)           / ____|                     \n" +
@@ -76,8 +76,8 @@ fun main() {
         println("                                 HOW TO PLAY")
         println("The Dice Game is a two-player game, played with a Die but on a computer.")
         println("It will randomly generate a number from 1 to 12 and you have to keep score on a grid.")
-        println("If it lands on a 1 you lose all your points in total.")
-        println("You can chose to sit out if you think you have enough from that round.")
+        println("If it lands on a 1 you lose all your points in total. You still keep going to round 6 but with your limited points.")
+        println("You can chose to sit out if you think you have enough from that round. Doing so will limit your points for that round.")
         println("Whoever has the most at the end of each round wins.")
         println()
 
@@ -86,7 +86,8 @@ fun main() {
         val player2 = getString("Please enter your name Player 2: ")
         println("Welcome to The Dice Game $player1 and $player2")
 
-        println("$player1, TIME TO ROLL THE DICE. You get 6 turns each. Once you have had your 6 turns please enter 'No' and give $player2 a turn")
+        println("$player1, TIME TO ROLL THE DICE! You get 6 turns each. Once you have had your 6 turns it will be $player2's turn.")
+        println("You can choose to stop if you want to by selecting no when asked.")
         var points = 0
         var playAgain = "yes"
         var rollCount = 0
@@ -94,13 +95,12 @@ fun main() {
             println("$player1 press enter to roll the dice!!!")
             readLine()
 
-            val roll = (1..12).random()
+            val roll = (dice).random()
             println("$player1, you rolled a $roll")
             if (roll == 1) {
                 points = 0
-                println("$player1, You rolled a 1 and have lost your points")
-            }
-            else {
+                println("$player1, You rolled a 1 and have lost your points!!!")
+            } else {
                 points += roll
                 println("$player1, These are your points so far: $points")
 
@@ -120,40 +120,55 @@ fun main() {
 
 
 
-        println("$player2, TIME TO ROLL THE DICE. Once you've had 6 turns please enter 'No' and end game.")
+
+        println("$player2, TIME TO ROLL THE DICE! Once you've had 6 turns the game will end and either you or $player1 will win!")
         var points2 = 0
-
         var playAgain2 = "yes"
-
+        var rollCount2 = 0
         while (playAgain2 == "yes") {
-            println("$player2 Press Enter to roll the dice!!!")
+            println("$player2 press enter to roll the dice!!!")
             readLine()
 
             val roll = (1..12).random()
             println("$player2, you rolled a $roll")
-            points2 += roll
-            println("$player2, These are your points so far: $points2")
-            rollCount += 1
-            println("Roll $rollCount")
-            if (rollCount > 5) {
+            if (roll == 1) {
+                points2 = 0
+                println("$player2, You rolled a 1 and have lost your points!!!")
+            } else {
+                points2 += roll
+                println("$player2, These are your points so far: $points2")
+
+            }
+            rollCount2 += 1
+            println("Roll $rollCount2")
+            if (rollCount2 > 5) {
                 playAgain2 = "no"
+                rollCount2 = 0
             } else {
                 println("Wanna roll again? (yes/no)")
                 playAgain2 = readLine()?.lowercase() ?: "no"
             }
 
-            println("Game over!!! You ended with $points2 points")
-            if (points2 > points) {
-                print("$player2, you got $points2 points and won!")
-            }
-            if (points > points2) {
-                print("$player1, you got $points points and won!")
-            }
-            if (points == points2) {
-                print("Good job $player1 and $player2, you both tied with an equal score of $points points")
-            }
+        }
+        println("Game over!!! You ended with $points2 points")
+
+        if (points2 > points) {
+            println("$player2, you got $points2 points and won!")
+        }
+        if (points > points2) {
+            println("$player1, you got $points points and won!")
+        }
+        if (points == points2) {
+            println("Good job $player1 and $player2, you both tied with an equal score of $points points")
+        }
+        if (points < points2) {
+            println("Unfortunately $player1 you lost with a score of $points points")
+        }
+        if (points2 < points) {
+            println("Unfortunately $player2 you lost with a score of $points2 points")
         }
     }
+
 
 
 
