@@ -98,15 +98,55 @@ they make up their points.
 ---
 
 ## Sit down, stay standing
+With the idea of greedy pig in mind I got the user to have a choice that once they have received a good score that 
+they like they can choose to sit down or keep standing (Stop or keep going). It works as with my yes and no functions
+the user can choose either but when the code registers more than 5 rolls have been done it automatically puts no to
+stop the user from having more than 6 turns.
 
-I want user to have a choice that once they have received a good score that they like they can chose to sit down
-or keep standing.
-lp
 ### Test Data To Use
 
-I will run code that has a letter you click to sit down and stop receiving points
+I ran code that has the yes or no you type to sit down and stop receiving points. The scores will be gone from roll 1 
+if the number 1 comes up. If they sit down they keep their points from roll 1 till they stop. Once 1 comes up though
+they can still carry on just with refreshed points.
 
 ### Expected Test Result
+![img_14.png](img_14.png)
 
-The scores will be gone from round 1 if the number specific comes up. If they sit down they keep their points but if
-the number comes up they lose their points from the entire game.
+---
+
+## Winner
+
+I got the game at the end to display who the winner is and how many points they had that made them win. The game
+displays a somewhat personalised message of "Congratulations". Then for the player who lost it says, "Unfortunately you lost".
+
+### Test Data To Use
+
+I ran code that when the game is finished the winner has there name displayed with their points and the game will end. The same with
+the player who lost underneath. I did this with a basic "if player > player2" function to display the winner.
+
+### Expected Test Result
+![img_15.png](img_15.png)
+
+---
+
+## (A) Start, (B) End
+
+I changed the games beginning screen to show the (A) Start and (B) End. This helps as there is almost nothing there
+except that to make it easier on the user to choose and option instead of having all the how to play instructions
+there first then the choices. When the user makes choice (A) it displays the logo and how to play before asking them to
+type there names. If they select (B) the game simply thanks them for playing and ends.
+
+### Test Data To Use
+
+I run the code that when the game starts it shows the choices and they choose 1 to take them where they want.
+
+### Expected Test Result - (A) Start (B) End
+![img_16.png](img_16.png)
+
+### Expected Test Result - (A) Start choice
+![img_17.png](img_17.png)
+
+### Expected Test Result - (B) End choice
+
+
+---
