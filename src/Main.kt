@@ -153,10 +153,10 @@ fun main() {
         println("Game over!!! Your turn has ended. You ended with $points2 points")
 
         if (points2 > points) {
-            println("$player2, you got $points2 points and won!")
+            println("Congratulations $player2, you got $points2 points and won!")
         }
         if (points > points2) {
-            println("$player1, you got $points points and won!")
+            println("Congratulations $player1, you got $points points and won!")
         }
         if (points == points2) {
             println("Good job $player1 and $player2, you both tied with an equal score of $points points")
@@ -165,7 +165,7 @@ fun main() {
             println("Unfortunately $player1 you lost with a score of $points points")
         }
         if (points2 < points) {
-            println("Unfortunately $player2 you lost with a score of $points2 points")
+            println("Unfortunately $player2, you lost with a score of $points2 points")
         }
     }
 
