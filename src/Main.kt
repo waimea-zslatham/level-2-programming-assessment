@@ -75,7 +75,7 @@ fun main() {
         println("-----------------------------------------------------------------------------------------------------")
         println("                                 HOW TO PLAY")
         println("The Dice Game is a two-player game, played with a Die but on a computer.")
-        println("It will randomly generate a number from 1 to 12 and you have to keep score on a grid.")
+        println("It will randomly generate a number from 1 to 12 and the game will keep score of it.")
         println("If it lands on a 1 you lose all your points in total. You still keep going to round 6 but with your limited points.")
         println("You can chose to sit out if you think you have enough from that round. Doing so will limit your points for that round.")
         println("Whoever has the most at the end of each round wins.")
@@ -116,7 +116,7 @@ fun main() {
             }
 
         }
-        println("Game over!!! You ended with $points points")
+        println("Your turn has ended. You ended with $points points")
 
 
 
@@ -150,7 +150,7 @@ fun main() {
             }
 
         }
-        println("Game over!!! You ended with $points2 points")
+        println("Game over!!! Your turn has ended. You ended with $points2 points")
 
         if (points2 > points) {
             println("$player2, you got $points2 points and won!")

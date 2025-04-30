@@ -80,15 +80,20 @@ also works too and it displays them at the end.
 
 ## Number to lose
 
-I want the generator to generate a number that when received will make the user lose all their points.
+I wanted the generator to generate a number that when received will make the user lose all their points. I have made it so the number
+is 1. 
 
 ### Test Data To Use
 
-I will run code that when the certain number is generated it erases all points built up from the first round.
+I ran the code that when the 1 is generated it erases all points built up from the beginning and still allows the user to carry on in case
+they make up their points.
 
-### Expected Test Result
+### Expected Test Result - loosing all your points
 
-The scores will be gone from round 1 if the number comes up. If the number 1 comes up first round well they have none to lose
+![img_12.png](img_12.png)
+
+### Expected Test Result - After you have lost all your points
+![img_13.png](img_13.png)
 
 ---
 
