@@ -24,5 +24,3 @@ The project is written in the [Kotlin](https://kotlinlang.org) programming langu
 
 ## Project Description
 The Dice Game is a two-player game, played with a Die but on a computer. It will randomly generate a number from 1 to 12 and you have to keep score on a grid. If it lands on a 1 you lose all your points in total. You can chose to sit out if you think you have enough from that round. Whoever has the most at the end of each round wins.
-
-

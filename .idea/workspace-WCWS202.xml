@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ddfe5b09-bee0-401a-90ed-05d0daa02924" name="Changes" comment="l" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2uT9SZTVBjH6h2F0CHbgCn394kK" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Kotlin.MainKt.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/zslatham/OneDrive - Waimea College/Documents/200DTD/Kotlin/level-2-programming-assessment&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\zslatham\OneDrive - Waimea College\Documents\200DTD\Kotlin\level-2-programming-assessment\docs\screenshots" />
+      <recent name="C:\Users\zslatham\OneDrive - Waimea College\Documents\200DTD\Kotlin\level-2-programming-assessment\docs" />
+      <recent name="C:\Users\zslatham\OneDrive - Waimea College\Documents\200DTD\Kotlin\level-2-programming-assessment" />
+      <recent name="C:\Users\zslatham\OneDrive - Waimea College\Documents\200DTD\Kotlin\level-2-programming-assessment\src" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ddfe5b09-bee0-401a-90ed-05d0daa02924" name="Changes" comment="" />
+      <created>1742261697500</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1742261697500</updated>
+      <workItem from="1742261698528" duration="2061000" />
+      <workItem from="1742423510266" duration="3134000" />
+      <workItem from="1742763983201" duration="2696000" />
+      <workItem from="1742859109248" duration="6316000" />
+      <workItem from="1743027997490" duration="3387000" />
+      <workItem from="1743368725389" duration="3259000" />
+      <workItem from="1743464454247" duration="6558000" />
+      <workItem from="1743632904887" duration="2927000" />
+      <workItem from="1744072470061" duration="5142000" />
+      <workItem from="1744080656323" duration="980000" />
+      <workItem from="1744241106169" duration="3631000" />
+      <workItem from="1745791563260" duration="3140000" />
+      <workItem from="1745886539981" duration="8485000" />
+      <workItem from="1746055524904" duration="3000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

@@ -15,7 +15,7 @@ I will run it and the logo should appear with the how to play
 
 ### Test Result
 
-![img.png](img.png)
+![img.png](screenshots/img.png)
 
 The logo displays well and the instructions are clear.
 
@@ -30,16 +30,16 @@ I have made the game ask Player 1 to input their name so they can be identified 
 Once run and player 1 and 2 have inputed their names it will display their names by welcoming them then telling them how to play and what to do.
 
 ### Test Result 1 - Player 1 can be inputed and works
-![img_1.png](img_1.png) 
+![img_1.png](screenshots/img_1.png) 
 
 ### Test Result 2 - Player 1 is welcomed to the game and then player 2 is asked for name
-![img_2.png](img_2.png) 
+![img_2.png](screenshots/img_2.png) 
 
 ### Test Result 3 - It introduces both player 1 and 2 to the game and explains what to do to start the game
-![img_3.png](img_3.png)
+![img_3.png](screenshots/img_3.png)
 
 ### Test Result 4 - it won't let any players not input a name and will go on infinitely unless a character is inputed
-![img_4.png](img_4.png)
+![img_4.png](screenshots/img_4.png)
 
 ---
 
@@ -53,28 +53,28 @@ For now when they put no the game breaks. But once the round is up it will displ
 I will run it and a dice roll random number, total points and what roll your on will be produced 
 
 ### Test Result
-![img_9.png](img_9.png)
+![img_9.png](screenshots/img_9.png)
 
 ### Test Result - points so far
-![img_10.png](img_10.png)
+![img_10.png](screenshots/img_10.png)
 
 ### Test Result - Roll ......
-![img_11.png](img_11.png)
+![img_11.png](screenshots/img_11.png)
 
 ### Test Result Player 1
-![img_5.png](img_5.png)
+![img_5.png](screenshots/img_5.png)
 
 ### Test Result Player 1 (2)
-![img_6.png](img_6.png)
+![img_6.png](screenshots/img_6.png)
 
 ### Test Result Player 2
-![img_7.png](img_7.png)
+![img_7.png](screenshots/img_7.png)
 
 ### Test Result Player 2 (2)
-![img_8.png](img_8.png)
+![img_8.png](screenshots/img_8.png)
 
 I got the game to allow both player 1 and 2 to both game 6 rounds each after player 1 had finished. The game works with both the dice and the rolls counted. The total score
-also works too and it displays them at the end.
+also works too and it displays them at the end. In some case I had a bug where sometimes the game would run and would double up names. Changed Val and it worked.
 
 ---
 
@@ -90,10 +90,10 @@ they make up their points.
 
 ### Expected Test Result - loosing all your points
 
-![img_12.png](img_12.png)
+![img_12.png](screenshots/img_12.png)
 
 ### Expected Test Result - After you have lost all your points
-![img_13.png](img_13.png)
+![img_13.png](screenshots/img_13.png)
 
 ---
 
@@ -110,7 +110,7 @@ if the number 1 comes up. If they sit down they keep their points from roll 1 ti
 they can still carry on just with refreshed points.
 
 ### Expected Test Result
-![img_14.png](img_14.png)
+![img_14.png](screenshots/img_14.png)
 
 ---
 
@@ -125,7 +125,7 @@ I ran code that when the game is finished the winner has there name displayed wi
 the player who lost underneath. I did this with a basic "if player > player2" function to display the winner.
 
 ### Expected Test Result
-![img_15.png](img_15.png)
+![img_15.png](screenshots/img_15.png)
 
 ---
 
@@ -141,12 +141,12 @@ type there names. If they select (B) the game simply thanks them for playing and
 I run the code that when the game starts it shows the choices and they choose 1 to take them where they want.
 
 ### Expected Test Result - (A) Start (B) End
-![img_16.png](img_16.png)
+![img_16.png](screenshots/img_16.png)
 
 ### Expected Test Result - (A) Start choice
-![img_17.png](img_17.png)
+![img_17.png](screenshots/img_17.png)
 
 ### Expected Test Result - (B) End choice
-
+![img_18.png](screenshots/img_18.png)
 
 ---
